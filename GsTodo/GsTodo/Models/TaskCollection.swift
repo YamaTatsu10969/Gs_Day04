@@ -23,11 +23,11 @@ class TaskCollection {
     weak var delegate: TaskCollectionDelegate? = nil
     
     func addTask(_ task: Task) {
-        self.tasks.append(task)
-        self.save()
+        tasks.append(task)
+        save()
     }
     
-    func save(){
-        self.delegate?.reload()
+    func save() {
+        delegate?.reload()
     }
 }

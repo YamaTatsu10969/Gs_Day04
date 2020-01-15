@@ -16,6 +16,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        TaskCollection.shared.delegate = self
         setupNavigationBar()
         // Do any additional setup after loading the view.
     }
@@ -41,4 +42,11 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         navigationController?.pushViewController(vc, animated: true)
     }
     
+}
+
+extension TaskListViewController: TaskCollectionDelegate {
+    // デリゲートのメソッド
+    func reload() {
+        tableView.reloadData()
+    }
 }

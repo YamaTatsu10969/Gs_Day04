@@ -45,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		675B63BD23CF040F00F9A5AC /* TaskListPage */ = {
+			isa = PBXGroup;
+			children = (
+				67E03F9A23CEC75400B8220F /* TaskListViewController.swift */,
+				67E03F9C23CEC75400B8220F /* Main.storyboard */,
+			);
+			path = TaskListPage;
+			sourceTree = "<group>";
+		};
+		675B63BF23CF042700F9A5AC /* AddPage */ = {
+			isa = PBXGroup;
+			children = (
+				67E03FAA23CEC8DD00B8220F /* AddViewController.swift */,
+				67E03FAB23CEC8DD00B8220F /* AddViewController.xib */,
+			);
+			path = AddPage;
+			sourceTree = "<group>";
+		};
+		678EAB9023CF034E00FE4177 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67E03FB123CEFB6B00B8220F /* Task.swift */,
+				67E03FB323CEFB8100B8220F /* TaskCollection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		67E03F8A23CEC75400B8220F = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +93,9 @@
 			children = (
 				67E03F9623CEC75400B8220F /* AppDelegate.swift */,
 				67E03F9823CEC75400B8220F /* SceneDelegate.swift */,
-				67E03F9A23CEC75400B8220F /* TaskListViewController.swift */,
-				67E03F9C23CEC75400B8220F /* Main.storyboard */,
-				67E03FB123CEFB6B00B8220F /* Task.swift */,
-				67E03FB323CEFB8100B8220F /* TaskCollection.swift */,
-				67E03FAA23CEC8DD00B8220F /* AddViewController.swift */,
-				67E03FAB23CEC8DD00B8220F /* AddViewController.xib */,
+				678EAB9023CF034E00FE4177 /* Models */,
+				675B63BD23CF040F00F9A5AC /* TaskListPage */,
+				675B63BF23CF042700F9A5AC /* AddPage */,
 				67E03F9F23CEC75700B8220F /* Assets.xcassets */,
 				67E03FA123CEC75700B8220F /* LaunchScreen.storyboard */,
 				67E03FA423CEC75700B8220F /* Info.plist */,
